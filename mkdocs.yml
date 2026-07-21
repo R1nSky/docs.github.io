@@ -1,4 +1,5 @@
 site_name: Wiki Rinsky
+site_url: https://r1nsky.github.io/docs.github.io/
 
 theme:
   name: material

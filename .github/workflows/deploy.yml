@@ -1,9 +1,9 @@
-name: Deploy
+name: Deploy MkDocs para GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main  # ou master, dependendo da sua branch principal
 
 permissions:
   contents: write
@@ -11,15 +11,24 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v5
         with:
-          python-version: 3.12
+          python-version: '3.12'
 
-      - run: |
+      - name: Instalar dependências
+        run: |
           pip install mkdocs-material
+          pip install mkdocs-git-revision-date-localized-plugin
 
-      - run: mkdocs gh-deploy --force
+      - name: Build do site
+        run: mkdocs build
+
+      - name: Deploy para GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./site
+          publish_branch: gh-pages
