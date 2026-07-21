@@ -1,0 +1,50 @@
+site_name: Wiki Rinsky
+
+theme:
+  name: material
+  language: pt-BR
+
+  palette:
+    # Modo escuro (roxo)
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Modo Escuro
+
+    # Modo claro (roxo)
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Modo Claro
+
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - toc.follow
+
+  icon:
+    logo: material/minecraft
+    repo: fontawesome/brands/github
+
+
+nav:
+  - 🏠 Início: index.md
+  - 📚 Plugins:
+    - Plugins de Clãs: plugins/simpleclans/index.md
+    - Plugins de Smile Fun: plugins/smilefun/index.md
+  - ⚖️ Regras do Servidor: regras.md
+
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
