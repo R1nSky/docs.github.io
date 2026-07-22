@@ -39,8 +39,9 @@ theme:
 nav:
   - 🏠 Início: index.md
   - 📚 Plugins:
-    - Plugins de Clãs: plugins/simpleclans/index.md
-    - Plugins de Slime Fun: plugins/smilefun/index.md
+    - Plugin Clãs: plugins/simpleclans/index.md
+    - Plugin Slime Fun: plugins/smilefun/index.md
+    - Plugin McMMO: plugins/mcmmo/index.md
   - ⚖️ Regras do Servidor: regras.md
 
 
