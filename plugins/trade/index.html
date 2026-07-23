@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#em-desenvolvimento" class="md-skip">
+        <a href="#sistema-de-trocas" class="md-skip">
           Pular para conteúdo
         </a>
       
@@ -530,6 +530,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -572,6 +574,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -580,10 +584,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#em-desenvolvimento" class="md-nav__link">
+  <a href="#comandos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        EM DESENVOLVIMENTO
+        Comandos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trade-jogador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /trade &lt;jogador&gt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trade-accept" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /trade accept
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trade-deny" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /trade deny
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona-a-troca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como funciona a troca
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informacoes-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Informações importantes
       
     </span>
   </a>
@@ -793,6 +858,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -801,10 +868,71 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#em-desenvolvimento" class="md-nav__link">
+  <a href="#comandos" class="md-nav__link">
     <span class="md-ellipsis">
       
-        EM DESENVOLVIMENTO
+        Comandos
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Comandos">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#trade-jogador" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /trade &lt;jogador&gt;
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trade-accept" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /trade accept
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#trade-deny" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        /trade deny
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#como-funciona-a-troca" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Como funciona a troca
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informacoes-importantes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Informações importantes
       
     </span>
   </a>
@@ -828,9 +956,43 @@
 
 
 
-  <h1>Plugin Trades</h1>
-
-<h2 id="em-desenvolvimento">EM DESENVOLVIMENTO<a class="headerlink" href="#em-desenvolvimento" title="Permanent link">&para;</a></h2>
+<h1 id="sistema-de-trocas">Sistema de Trocas<a class="headerlink" href="#sistema-de-trocas" title="Permanent link">&para;</a></h1>
+<p>O sistema de trocas permite negociar itens com outros jogadores de forma segura, evitando golpes e perdas acidentais. Todas as trocas acontecem em uma interface protegida e somente são concluídas quando ambos os jogadores confirmam.</p>
+<h2 id="comandos">Comandos<a class="headerlink" href="#comandos" title="Permanent link">&para;</a></h2>
+<h3 id="trade-jogador"><code>/trade &lt;jogador&gt;</code><a class="headerlink" href="#trade-jogador" title="Permanent link">&para;</a></h3>
+<p>Envia um pedido de troca para o jogador informado.</p>
+<p><strong>Exemplo:</strong></p>
+<pre><code class="language-text">/trade Steve
+</code></pre>
+<p>Após o envio, o jogador receberá um convite para aceitar ou recusar a solicitação. Enquanto o pedido estiver pendente, não será possível iniciar outra troca.</p>
+<hr />
+<h3 id="trade-accept"><code>/trade accept</code><a class="headerlink" href="#trade-accept" title="Permanent link">&para;</a></h3>
+<p>Aceita o último pedido de troca recebido.</p>
+<p>Ao aceitar, uma janela de troca será aberta para ambos os jogadores. Nela, você poderá adicionar os itens que deseja negociar antes de confirmar.</p>
+<hr />
+<h3 id="trade-deny"><code>/trade deny</code><a class="headerlink" href="#trade-deny" title="Permanent link">&para;</a></h3>
+<p>Recusa o pedido de troca recebido.</p>
+<p>A solicitação será cancelada imediatamente e nenhuma troca será iniciada.</p>
+<hr />
+<h2 id="como-funciona-a-troca">Como funciona a troca<a class="headerlink" href="#como-funciona-a-troca" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Um jogador envia um pedido utilizando <code>/trade &lt;jogador&gt;</code>.</li>
+<li>O outro jogador aceita com <code>/trade accept</code>.</li>
+<li>Ambos adicionam os itens desejados na interface de troca.</li>
+<li>Cada jogador confirma que está de acordo com a negociação.</li>
+<li>Quando os dois confirmarem, os itens serão trocados automaticamente.</li>
+</ol>
+<p>Se qualquer jogador fechar a interface, cancelar a troca ou desconectar antes da confirmação final, a negociação será cancelada e os itens permanecerão com seus respectivos donos.</p>
+<h2 id="informacoes-importantes">Informações importantes<a class="headerlink" href="#informacoes-importantes" title="Permanent link">&para;</a></h2>
+<ul>
+<li>A troca só é concluída quando <strong>os dois jogadores confirmam</strong>.</li>
+<li>Alterar os itens após uma confirmação normalmente faz com que seja necessário confirmar novamente, garantindo que ambos vejam as mudanças.</li>
+<li>Verifique cuidadosamente todos os itens antes de confirmar a negociação.</li>
+<li>Certifique-se de que a quantidade, encantamentos, durabilidade, nomes personalizados e demais características dos itens estão corretos.</li>
+<li>Nunca confirme uma troca apenas porque o outro jogador está pressionando você.</li>
+<li>Caso a negociação seja cancelada antes da confirmação final, nenhum item será transferido.</li>
+<li>Utilize apenas o sistema oficial de trocas do servidor para negociar itens com segurança.</li>
+</ul>
 
 
 
